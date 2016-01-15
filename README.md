@@ -6,7 +6,7 @@ A header-only, cross-platform, lightweight C++11 micro-benchmark library which p
 
 ### BUILD
 
-The library consists of a single header file [mib.h](https://github.com/thfabian/mib/master/include/mib.h). The library only depends on the C++ STL and certain platform specific headers, most notably `windows.h` and `unistd.h`.
+The library consists of a single header file [mib.h](https://github.com/thfabian/mib/blob/master/include/mib.h). The library only depends on the C++ STL and certain platform specific headers, most notably `windows.h` and `unistd.h`.
 
 ### USAGE
 
@@ -30,7 +30,7 @@ The library can be configured with `#define` the following macros before includi
 
 ##### Example
 
-The following simple example shows how to measure the [std::shuffle](http://en.cppreference.com/w/cpp/algorithm/random_shuffle) operation on a vector and a list. 
+The following simple example shows how to measure the [std::sort](http://en.cppreference.com/w/cpp/algorithm/random_shuffle) operation on a vector and a list. 
 
 ```c++
 #include "mib.h"

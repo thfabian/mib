@@ -17,7 +17,7 @@ The library uses the [rdtsc](https://en.wikipedia.org/wiki/Time_Stamp_Counter) t
 * `MIB_START(name)`: Register an event, identified by `name` (given as a *string*, hence "."), and start the timer. If this is called within an already existing event, the event will be trated as a child node of the parent event.
 * `MIB_STOP(name)`: Stop the event and timer given by `name`.
 * `MIB_NEXT(name)`: Stop the **last** event and timer and register a new event `name`.
-* `MIB_PRINT(mod)`: Prints *all* events in a tree like fashion to the console. The argument `mod` can be either `cycles` (using rdtsc timer) or `nsec` (using STL chrono) depending on the preferred time-unit.
+* `MIB_PRINT(mod)`: Prints *all* events in a tree like fashion to the console. The argument `mod` can be either `cycle` (using rdtsc timer) or `nsec` (using STL chrono) depending on the preferred time-unit.
  
 
 The identifier `name` has to be unique as starting and stopping an event multiple times given by the same name will be treated as the same event (See example).

@@ -525,7 +525,7 @@ struct Terminal
         ioctl(STDOUT_FILENO, TIOCGWINSZ, &ws);
         width = (int)ws.ws_col;
 #endif
-        return (width == 0 ? 80 : width);
+        return (width <= 0 ? 80 : width);
     }
 };
 
